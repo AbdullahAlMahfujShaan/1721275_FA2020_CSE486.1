@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LoginApp</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="no_account_yet_register_here">No Account Yet? Register Here.</string>
+    <string name="loginwindow">LoginWindow</string>
+    <string name="button_bg">"Login Successful!!!</string>
+    <string name="welcome_shaan">Welcome Shaan</string>
+</resources>
