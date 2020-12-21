@@ -1,5 +1,4 @@
 <resources>
-
     <string name="recipient">Recipient:</string>
     <string name="_16_character_aes_key">16-Character AES Key</string>
     <string name="message">Message:</string>
@@ -11,4 +10,5 @@
     <string name="decrypted_message">Decrypted Message:</string>
     <string name="submit">Submit</string>
     <string name="cancel_button2">Cancel</string>
+    <string name="app_name">EncryptionApp</string>
 </resources>
