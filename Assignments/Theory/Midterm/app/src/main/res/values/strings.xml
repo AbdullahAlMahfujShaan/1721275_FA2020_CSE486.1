@@ -1,15 +1,14 @@
 <resources>
     <string name="app_name">EncryptionApp</string>
-    <string name="send">Send</string>
     <string name="smsBody">TextView</string>
     <string name="to">To:</string>
     <string name="_3_character_alphanumeric_key">3 Character AlphaNumeric Key</string>
     <string name="message">Message:</string>
     <string name="send">Send</string>
-    <string name="cancel">Cancel</string>
     <string name="sender">Sender:</string>
     <string name="received_encrypted_message">Received Encrypted Message:</string>
     <string name="decrypted_message">Decrypted Message:</string>
     <string name="submit">Submit</string>
     <string name="cancel">Cancel</string>
+    <string name="_16_character_aes_key">16 Character AES Key</string>
 </resources>
