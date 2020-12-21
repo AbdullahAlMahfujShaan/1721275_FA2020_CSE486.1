@@ -41,7 +41,7 @@ public abstract class SendSMSActivity extends AppCompatActivity {
             senderNum.setText(originNum);
             encryptedMsg.setText(msgContent);
         } else {
-            Toast.makeText(getBaseContext(), "Error Occurs!",
+            Toast.makeText(getBaseContext(), "Error!",
                     Toast.LENGTH_SHORT).show();
             finish();
         }
