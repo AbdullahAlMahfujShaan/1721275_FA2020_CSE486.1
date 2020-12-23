@@ -1,14 +1,8 @@
 <resources>
-    <string name="recipient">Recipient:</string>
-    <string name="_16_character_aes_key">16-Character AES Key</string>
-    <string name="message">Message:</string>
-    <string name="send_button">Send</string>
-    <string name="cancel_button">Cancel</string>
-    <string name="sender_name">Sender:</string>
-    <string name="_16_character_aes_key_2">16-Character AES Key:</string>
-    <string name="received_encrypted_message">Received Encrypted Message:</string>
-    <string name="decrypted_message">Decrypted Message:</string>
-    <string name="submit">Submit</string>
-    <string name="cancel_button2">Cancel</string>
     <string name="app_name">EncryptionApp</string>
+    <string name="decrypted_text">Decrypted Text</string>
+    <string name="text">Text</string>
+    <string name="key">Key</string>
+    <string name="send">Send</string>
+    <string name="textview">TextView</string>
 </resources>
