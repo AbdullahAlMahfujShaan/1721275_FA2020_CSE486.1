@@ -1,4 +1,4 @@
-package com.mahfujshaan.cse486.test;
+package com.mahfujshaan.cse486.BanglaDictionary;
 
 import org.junit.Test;
 
