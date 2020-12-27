@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">BanglaDictionary</string>
     <string name="textview">TextView</string>
+    <string name="settings">Settings</string>
+    <string name="exit">Exit</string>
+    <string name="dictionary">Dictionary</string>
 </resources>
