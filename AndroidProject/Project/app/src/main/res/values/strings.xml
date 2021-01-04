@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TheFoodTongApp</string>
+    <string name="name">Name</string>
+    <string name="burger">Burger</string>
 </resources>
