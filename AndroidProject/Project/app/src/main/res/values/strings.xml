@@ -2,4 +2,7 @@
     <string name="app_name">TheFoodTongApp</string>
     <string name="name">Name</string>
     <string name="burger">Burger</string>
+    <string name="bdt">BDT</string>
+    <string name="price">Price</string>
+    <string name="description">Description</string>
 </resources>
