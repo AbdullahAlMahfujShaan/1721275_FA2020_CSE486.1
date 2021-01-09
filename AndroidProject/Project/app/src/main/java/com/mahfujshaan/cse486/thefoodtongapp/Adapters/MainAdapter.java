@@ -56,7 +56,7 @@ final MainModel model = list.get(position);
             super(itemView);
             foodimage = itemView.findViewById(R.id.imageView);
             mainName = itemView.findViewById(R.id.name);
-            price = itemView.findViewById(R.id.orderPrice);
+            price = itemView.findViewById(R.id.orderPriceFood);
             description = itemView.findViewById(R.id.description);
 
         }
