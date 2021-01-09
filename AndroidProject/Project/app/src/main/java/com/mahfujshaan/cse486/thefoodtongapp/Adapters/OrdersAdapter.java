@@ -1,6 +1,7 @@
 package com.mahfujshaan.cse486.thefoodtongapp.Adapters;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -27,7 +28,10 @@ public class OrdersAdapter extends RecyclerView.Adapter<OrdersAdapter.viewHolder
     @NonNull
     @Override
     public viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        View view = LayoutInflater.from(context).inflate(R.layout.order_sample, parent, false);
+
+
+        return new viewHolder(view);
     }
 
     @Override
