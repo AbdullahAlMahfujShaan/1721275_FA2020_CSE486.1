@@ -1,6 +1,7 @@
 package com.mahfujshaan.cse486.thefoodtongapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.os.Bundle;
 
@@ -35,6 +36,9 @@ ActivityMainBinding binding;
 
         MainAdapter adapter = new MainAdapter(list, this);
         binding.recyclerView.setAdapter(adapter);
-        
+
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        binding.recyclerView.setLayoutManager(layoutManager);
+
     }
 }
