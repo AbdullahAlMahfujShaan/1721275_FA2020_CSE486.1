@@ -25,6 +25,7 @@ final static int DBVERSION = 1;
            "phone text,"+
            "price int," +
            "image int," +
+                   "quantity int," +
            "foodname text," +
            "description text)"
    );
@@ -36,7 +37,7 @@ final static int DBVERSION = 1;
 sqLiteDatabase.execSQL("DROP TABLE IF EXISTS orders");
 onCreate(sqLiteDatabase);
     }
-public boolean insertOrder(String name, String phone, int price, int image, String description, String foodname )
+public boolean insertOrder(String name, String phone, int price, int image, String description, String foodname, int quantity)
 {
 
 SQLiteDatabase database = getReadableDatabase();
@@ -45,6 +46,7 @@ SQLiteDatabase database = getReadableDatabase();
     values.put("phone",phone);
     values.put("price",price);
     values.put("image",image);
+    values.put("quantity",quantity);
     values.put("foodname",foodname);
     values.put("description",description);
     long id = database.insert("orders",null,values);
