@@ -22,7 +22,7 @@ ActivityDetailBinding binding;
 
  binding.detailImage.setImageResource(image);
  binding.priceLabel.setText(String.format("%d",price));
- binding.foodName.setText(name);
+ binding.foodName.setText(name); // nameBox is customer name
  binding.detailDescription.setText(description);
 
     }
