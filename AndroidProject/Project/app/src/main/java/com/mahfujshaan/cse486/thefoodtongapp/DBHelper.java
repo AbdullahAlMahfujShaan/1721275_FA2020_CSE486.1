@@ -7,13 +7,22 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 public class DBHelper extends SQLiteOpenHelper {
-    public DBHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
-        super(context, name, factory, version);
+
+    final static String DBNAME = "foodtongbase.db";
+final static int DBVERSION = 1;
+
+    public DBHelper(@Nullable Context context) {
+        super(context, DBNAME, null, DBVERSION);
     }
 
     @Override
-    public void onCreate(SQLiteDatabase db) {
+    public void onCreate(SQLiteDatabase sqLiteDatabase) {
+   sqLiteDatabase.execSQL();
 
+
+
+
+);
     }
 
     @Override
