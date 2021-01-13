@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import com.mahfujshaan.cse486.thefoodtongapp.databinding.ActivityDetailBinding;
 
@@ -31,13 +32,18 @@ final DBHelper helper = new DBHelper(this);
      @Override
      public void onClick(View v) {
 
-     boolean isInserted =   helper.insertOrder(binding.nameBox.getText().toString(),
+     boolean isInserted =   helper.insertOrder(
+             binding.nameBox.getText().toString(),
                  binding.phoneBox.getText().toString(),
                  price,
                  image,
                  name,
                  description,
          Integer.parseInt(binding.quantity.getText().toString()));
+     if(isInserted)
+         Toast.makeText(DetailActivity.this,"Success",Toast.LENGTH_SHORT).show();
+     else
+         Toast.makeText(DetailActivity.this,"ERROR",Toast.LENGTH_SHORT).show();
      }
  });
 

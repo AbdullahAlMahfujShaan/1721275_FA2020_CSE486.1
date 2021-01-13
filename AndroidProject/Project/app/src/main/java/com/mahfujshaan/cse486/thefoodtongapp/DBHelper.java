@@ -10,7 +10,7 @@ import androidx.annotation.Nullable;
 public class DBHelper extends SQLiteOpenHelper {
 
     final static String DBNAME = "foodtongbase.db";
-final static int DBVERSION = 1;
+final static int DBVERSION = 2;
 
     public DBHelper(@Nullable Context context) {
         super(context, DBNAME, null, DBVERSION);
@@ -20,7 +20,7 @@ final static int DBVERSION = 1;
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
    sqLiteDatabase.execSQL(
            "create table orders" +
-           "(id int primary key autoincrement," +
+           "(id integer primary key autoincrement," +
            "name text," +
            "phone text,"+
            "price int," +
