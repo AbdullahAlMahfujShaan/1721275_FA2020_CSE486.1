@@ -24,23 +24,6 @@ public class OrderActivity extends AppCompatActivity {
         binding = ActivityOrderBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-
-        //list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
-       // list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
-        //list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
-        //list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
-       // list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
-        //list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
-        //list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
-       // list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
-       // list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
-       // list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
-       // list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
-       // list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
-        //list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
-        //list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
-       // list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
-
 DBHelper helper = new DBHelper(this);
 ArrayList<OrdersModel> list = helper.getOrders();
         OrdersAdapter adapter = new OrdersAdapter(list, this);

@@ -48,6 +48,7 @@ holder.itemView.setOnClickListener(new View.OnClickListener() {
         intent.putExtra("price", model.getPrice());
         intent.putExtra("description", model.getDescription());
         intent.putExtra("name", model.getName());
+        intent.putExtra("type", 1);
         context.startActivity(intent);
     }
 });
