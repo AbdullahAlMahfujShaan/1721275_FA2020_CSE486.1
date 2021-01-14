@@ -27,21 +27,21 @@ public class OrderActivity extends AppCompatActivity {
 
 
         ArrayList<OrdersModel> list = new ArrayList<>();
-        list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
-        list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
-        list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
-        list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
-        list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
-        list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
-        list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
-        list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
-        list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
-        list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
-        list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
-        list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
-        list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
-        list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
-        list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
+        //list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
+       // list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
+        //list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
+        //list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
+       // list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
+        //list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
+        //list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
+       // list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
+       // list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
+       // list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
+       // list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
+       // list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
+        //list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
+        //list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
+       // list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
 
 
         OrdersAdapter adapter = new OrdersAdapter(list, this);
