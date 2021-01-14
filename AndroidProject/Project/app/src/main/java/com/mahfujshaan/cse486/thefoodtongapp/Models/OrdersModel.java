@@ -4,8 +4,8 @@ public class OrdersModel {
 
 int orderImage;
 String soldItemName, price, orderNumber;
-
-    public OrdersModel(int orderImage, String soldItemName, String price, String orderNumber) {
+//there might be an error due to arguments
+    public OrdersModel() {
         this.orderImage = orderImage;
         this.soldItemName = soldItemName;
         this.price = price;

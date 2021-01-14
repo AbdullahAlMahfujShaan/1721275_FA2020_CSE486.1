@@ -21,12 +21,10 @@ public class OrderActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         binding = ActivityOrderBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
 
-        ArrayList<OrdersModel> list = new ArrayList<>();
         //list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
        // list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
         //list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
@@ -43,7 +41,8 @@ public class OrderActivity extends AppCompatActivity {
         //list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
        // list.add(new OrdersModel(R.drawable.burger, "Cheese Burger", "250", "1234567890"));
 
-
+DBHelper helper = new DBHelper(this);
+ArrayList<OrdersModel> list = helper.getOrders();
         OrdersAdapter adapter = new OrdersAdapter(list, this);
         binding.orderRecyclerView.setAdapter(adapter);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
