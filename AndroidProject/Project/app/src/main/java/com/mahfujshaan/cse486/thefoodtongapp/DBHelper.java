@@ -73,10 +73,27 @@ if(cursor.moveToFirst()){
         model.setSoldItemName(cursor.getString(1));
         model.setOrderImage(cursor.getInt(2));
         model.setPrice(cursor.getInt(3)+"");
-        orders.add(model); }
+        orders.add(model);
+    }
      }
 cursor.close();
 database.close();
 return orders;
+     }
+
+
+     public Cursor getOrderById(int id){
+
+         SQLiteDatabase database = this.getWritableDatabase();
+         Cursor cursor = database.rawQuery("Select * from orders where id ="+id, null);
+if(cursor !=null)
+    cursor.moveToFirst();
+
+
+
+         cursor.close();
+         database.close();
+         return cursor;
+
      }
 }
