@@ -3,6 +3,7 @@ package com.mahfujshaan.cse486.thefoodtongapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -52,11 +53,13 @@ ActivityDetailBinding binding;
  });
         }
         else {
-
+            int id = getIntent().getIntExtra("id", 0);
+            Cursor cursor = helper.getOrderById(id);
+            binding.detailImage.setImageResource(cursor.getInt(4));
+            binding.priceLabel.setText(String.format("%d",cursor.getInt(3)));
+            binding.foodName.setText(cursor.getString(6)); // nameBox is customer name
+            binding.detailDescription.setText(cursor.getString(5));
         }
-
-
-
 
     }
 }

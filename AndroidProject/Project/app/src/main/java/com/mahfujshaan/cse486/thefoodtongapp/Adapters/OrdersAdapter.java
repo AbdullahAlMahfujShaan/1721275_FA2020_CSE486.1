@@ -48,8 +48,8 @@ public class OrdersAdapter extends RecyclerView.Adapter<OrdersAdapter.viewHolder
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-Intent intent = new Intent(context, DetailActivity.class);
-intent.putExtra("id",model.getOrderNumber());
+                Intent intent = new Intent(context, DetailActivity.class);
+                intent.putExtra("id",Integer.parseInt(model.getOrderNumber()));
                 intent.putExtra("type",2);
                 context.startActivity(intent);
             }

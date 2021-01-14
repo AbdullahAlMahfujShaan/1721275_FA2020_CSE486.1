@@ -49,9 +49,11 @@ SQLiteDatabase database = getReadableDatabase();
     values.put("phone",phone);
     values.put("price",price);
     values.put("image",image);
-    values.put("quantity",quantity);
-    values.put("foodname",foodname);
     values.put("description",description);
+    values.put("foodname",foodname);
+    values.put("quantity",quantity);
+
+
     long id = database.insert("orders",null,values);
     if(id <=0){
         return false;
@@ -88,11 +90,6 @@ return orders;
          Cursor cursor = database.rawQuery("Select * from orders where id ="+id, null);
 if(cursor !=null)
     cursor.moveToFirst();
-
-
-
-         cursor.close();
-         database.close();
          return cursor;
 
      }
