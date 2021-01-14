@@ -53,12 +53,39 @@ ActivityDetailBinding binding;
  });
         }
         else {
-            int id = getIntent().getIntExtra("id", 0);
+            final int id = getIntent().getIntExtra("id", 0);
             Cursor cursor = helper.getOrderById(id);
-            binding.detailImage.setImageResource(cursor.getInt(4));
+            final int image =cursor.getInt(4);
+
+            binding.detailImage.setImageResource(image);
             binding.priceLabel.setText(String.format("%d",cursor.getInt(3)));
             binding.foodName.setText(cursor.getString(6)); // nameBox is customer name
             binding.detailDescription.setText(cursor.getString(5));
+
+
+            binding.nameBox.setText(cursor.getString(1));
+            binding.phoneBox.setText(cursor.getString(2));
+            binding.insertButton.setText("Update Now");
+            binding.insertButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    boolean isUpdated = helper.updateOrder(
+        binding.nameBox.getText().toString(),
+        binding.phoneBox.getText().toString(),
+        Integer.parseInt(binding.priceLabel.getText().toString()),
+        image,
+        binding.detailDescription.getText().toString(),
+        binding.foodName.getText().toString(),
+1,
+        id
+        );
+if(isUpdated)
+    Toast.makeText(DetailActivity.this, "Updated", Toast.LENGTH_SHORT).show();
+else
+    Toast.makeText(DetailActivity.this, "Failed", Toast.LENGTH_SHORT).show();
+                }
+
+            });
         }
 
     }

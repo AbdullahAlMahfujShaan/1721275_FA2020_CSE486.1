@@ -7,10 +7,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.mahfujshaan.cse486.thefoodtongapp.DBHelper;
 import com.mahfujshaan.cse486.thefoodtongapp.DetailActivity;
 import com.mahfujshaan.cse486.thefoodtongapp.Models.OrdersModel;
 import com.mahfujshaan.cse486.thefoodtongapp.R;
@@ -54,13 +56,20 @@ public class OrdersAdapter extends RecyclerView.Adapter<OrdersAdapter.viewHolder
                 context.startActivity(intent);
             }
         });
+        holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                DBHelper helper = new DBHelper(context);
+                if(helper.deleteOrder(model.getOrderNumber())>0){
+                    Toast.makeText(context,"Deleted",Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    Toast.makeText(context,"Failed",Toast.LENGTH_SHORT).show();
+                }
 
-
-
-
-
-
-
+                return false;
+            }
+        });
     }
 
     @Override

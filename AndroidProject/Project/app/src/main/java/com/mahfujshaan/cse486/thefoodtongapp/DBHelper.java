@@ -93,4 +93,37 @@ if(cursor !=null)
          return cursor;
 
      }
+
+    public boolean updateOrder(String name, String phone, int price, int image, String description, String foodname, int quantity, int id)
+    {
+
+        SQLiteDatabase database = getReadableDatabase();
+        ContentValues values = new ContentValues();
+        values.put("name",name);
+        values.put("phone",phone);
+        values.put("price",price);
+        values.put("image",image);
+        values.put("description",description);
+        values.put("foodname",foodname);
+        values.put("quantity",quantity);
+
+
+        long row = database.update("order", values, "id="+id,null);
+        if(row <=0){
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
+    public int deleteOrder(String id){
+        SQLiteDatabase database = this.getWritableDatabase();
+        return database.delete("orders", "id="+id,null);
+    }
+
+
+
+
+
 }
