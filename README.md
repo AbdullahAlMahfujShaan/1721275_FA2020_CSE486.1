@@ -6,7 +6,7 @@
 <p align="center"><strong>Project Report</strong></p>
 <p align="center"><strong>Fall 2020</strong></p>
 <p align="center"><strong>Project Name</strong>: The Food Tong App</p>
-<p align="center"><strong>Course No</strong>: CSE 486 <strong>Sec</strong><strong>:</strong> 2</p>
+<p align="center"><strong>Course No</strong>: CSE 486 <strong>Sec</strong><strong>:</strong> 1</p>
 <p align="center"><strong>Faculty</strong>: Shaikh Shawon Arefin Shimon (SAS3)</p>
 <p align="center"><strong><u>Member Detail</u></strong></p>
 <p align="center"><strong>Name</strong><strong>:</strong> Abdullah Al Mahfuj Shaan</p>
