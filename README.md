@@ -18,6 +18,6 @@
 <p><strong>&nbsp;</strong></p>
 <p><strong>&nbsp;</strong></p>
 <p><strong>INTRODUCTION</strong></p>
-<p>To be Written</p>
-<p><strong>PROBLEM STATEMENT</strong></p>
-<p>To be written</p>
+<p>Get your favorite food at your doorstep without any hassle. Introducing the FoodTong App, where there is no hassle of signing up or logging in. Just select your favorite food and order it using your name and phone number.</p>
+<p><strong>FEATURES</strong></p>
+<li>Advising Window</li>
