@@ -39,3 +39,12 @@ If the user makes the choice to delete his order, he can long press a order to d
 
 #### Landing Page
 ![login screen](https://github.com/NSU-FA20-CSE486-1/1721275_FA2020_CSE486.1/blob/main/AndroidProject/Project%20Screenshots/landing_page.jpg)
+
+#### My Orders
+![login screen](https://github.com/NSU-FA20-CSE486-1/1721275_FA2020_CSE486.1/blob/main/AndroidProject/Project%20Screenshots/my_orders.jpg)
+
+#### Order Activity
+![login screen](https://github.com/NSU-FA20-CSE486-1/1721275_FA2020_CSE486.1/blob/main/AndroidProject/Project%20Screenshots/order_activity.jpg)
+
+#### Update Order Activity
+![login screen](https://github.com/NSU-FA20-CSE486-1/1721275_FA2020_CSE486.1/blob/main/AndroidProject/Project%20Screenshots/update_order.JPG)
