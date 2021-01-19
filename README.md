@@ -34,6 +34,7 @@ If the user makes the choice to delete his order, he can long press a order to d
 <p>There is no design pattern, that is, MVC or MVVM, associated with the project. I have used normal approach that is design, implement and fixed bugs if found any. </p>
 <p><strong>ROAD BLOCKS</strong></p>
 <p>There were a few hiccups that I had to fix while doing the project. First problem that I encountered was in Android Manifest. The app crashed multiple times because of not adding an activity in the manifest file, which later on I fixed seeing the logcat. In the OrderActivity, the Username and FoodName XML id was same which caused another issue. The food name used to come in the Username section. There is still one bug left in the project, which I could not fix. That is whenever I update the order, it updates in the database, but it does not come up in the updated order section. </p>
+
 ## Featured Photos
 
 #### Landing Page
