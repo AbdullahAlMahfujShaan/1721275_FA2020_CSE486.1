@@ -28,6 +28,7 @@ After the user selects the preferred food, the app takes it to another screen, w
 The user can also update his order according to his choice after ordering a food. 
 <li>Delete Order</li>
 If the user makes the choice to delete his order, he can long press a order to delete it.
+
 <p><strong>DATA MANAGEMENT</strong></p>
 <p>In this project, I have used SQLite Database as the primary storage to store Username, Phone Number, Food Name, Quantity and Food Description.</p>
 <p><strong>DESIGN PATTERN</strong></p>
